@@ -17,6 +17,7 @@ SIZES = json.load(open(os.path.join(ROOT, "assets/img/sizes.json")))
 VERSION = dt.datetime.now().strftime("%Y%m%d%H%M")
 TODAY = dt.date(2026, 10, 29)
 SITE = "The Future Farmer's Table"
+BASE_URL = "https://future-farmers-table.vercel.app"
 
 e = html.escape
 
@@ -121,7 +122,7 @@ def head(title, desc, page, og_img="og"):
 <meta property="og:type" content="website">
 <meta property="og:title" content="{e(full)}">
 <meta property="og:description" content="{e(desc)}">
-<meta property="og:image" content="/assets/img/{og_img}.jpg">
+<meta property="og:image" content="{BASE_URL}/assets/img/{og_img}.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/syne.woff2" as="font" type="font/woff2" crossorigin>
@@ -307,7 +308,7 @@ def build_home():
              ("roots", "02 — Roots in water", "White roots growing in a glass of water under a seedling", "tall"),
              ("fungi-greenhouse", "04 — Fungi on coffee", "Oyster mushrooms fruiting from a steel grow chamber", "wide")]
     col = lambda items: '<div class="collage__col">' + "".join(
-        f'<figure class="tile tile--{shape} grow" data-reveal>{img(n, alt, "(min-width: 900px) 25vw, 50vw", eager=i < 2)}<figcaption class="tile__cap">{cap}</figcaption></figure>'
+        f'<figure class="tile tile--{shape} grow" data-reveal>{img(n, alt, "(min-width: 900px) 25vw, 50vw", eager=True)}<figcaption class="tile__cap">{cap}</figcaption></figure>'
         for i, (n, cap, alt, shape) in items) + "</div>"
     collage = col([(0, tiles[0]), (1, tiles[1])]) + col([(2, tiles[2]), (3, tiles[3])])
 
