@@ -176,7 +176,7 @@ def nav(active):
 
 
 def footer(minimal=False):
-    legal = f"""<div class="footer__legal"><span>© 2026 Future Farmer’s Table. A concept store designed by Hayun Kim for SI 407. No real orders or payments are processed.</span><span><a href="/about#notes">Design notes</a></span></div>"""
+    legal = f"""<div class="footer__legal"><span>© 2026 Future Farmer’s Table. A concept store designed by Ella Kim for SI 407. No real orders or payments are processed.</span><span><a href="/about#notes">Design notes</a></span></div>"""
     if minimal:
         return f'<footer class="footer" style="padding-block:var(--s-6)"><div class="container">{legal.replace('class="footer__legal"', 'class="footer__legal" style="margin-top:0;border-top:0;padding-top:0"')}</div></footer>'
     cols = [
@@ -833,7 +833,7 @@ def build_about():
 </section>
 <section class="section section--mist" id="notes">
   <div class="container">
-    {section_head("Design notes", "About this project", "The Future Farmer’s Table is a concept store designed and built by Hayun Kim for SI 407 at the University of Michigan. Products, workshops and prices are fictional, and the cart and checkout never take payment.")}
+    {section_head("Design notes", "About this project", "The Future Farmer’s Table is a concept store designed and built by Ella Kim for SI 407 at the University of Michigan. Products, workshops and prices are fictional, and the cart and checkout never take payment.")}
     <div class="notes">
       <div class="note"><p class="eyebrow">Problem statement</p><p class="h6">How might we help first-time growers with little space quickly find a kit that fits their space, skill level and budget, and feel sure they’ll actually harvest something?</p><p class="small">That question shaped the filters (level, space, price, time to harvest), the fit finder on the home page, the day-by-day harvest timeline on each kit, and the first-harvest promise.</p></div>
       <div class="note"><p class="eyebrow">What I learned from competitors</p><ul>

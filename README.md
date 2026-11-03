@@ -1,6 +1,6 @@
 # The Future Farmer's Table
 
-A concept store for food-tech grow kits and hands-on workshops, designed and built by Hayun Kim for SI 407 (University of Michigan). Products, workshops and prices are fictional; the cart and checkout are a demo and never take payment.
+A concept store for food-tech grow kits and hands-on workshops, designed and built by Ella Kim for SI 407 (University of Michigan). Products, workshops and prices are fictional; the cart and checkout are a demo and never take payment.
 
 **Problem statement:** How might we help first-time growers with little space quickly find a kit that fits their space, skill level and budget, and feel sure they'll actually harvest something?
 
